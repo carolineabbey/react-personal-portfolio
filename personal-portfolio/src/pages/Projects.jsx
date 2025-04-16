@@ -1,4 +1,8 @@
 import React from 'react';
+import checkmate from '../assets/checkmate.png';
+import firstserengeti from '../assets/serengeti1.png';
+import secondserengeti from '../assets/serengeti2.png';
+import persurvey from '../assets/personalitysurvey.png';
 export default function Projects() {
   return (
     <section>
@@ -13,7 +17,7 @@ export default function Projects() {
           View Prototype
         </a>
         <br />
-        <img src="/src/assets/checkmate.png" alt="Checkmate App Screenshot" width="300" />
+        <img src={checkmate} alt="Checkmate App Screenshot" width="300" />
       </div>
       <hr />
       <div>
@@ -23,8 +27,8 @@ export default function Projects() {
           for traveling to the Serengeti and going on a safari. All photos were taken by me in my time
           on a safari in the Serengeti.
         </p>
-        <img src="/src/assets/serengeti1.png" alt="Serengeti Webpage 1" width="300" />
-        <img src="/src/assets/serengeti2.png" alt="Serengeti Webpage 2" width="300" />
+        <img src={firstserengeti} alt="Serengeti Webpage 1" width="300" />
+        <img src={secondserengeti} alt="Serengeti Webpage 2" width="300" />
       </div>
       <hr />
       <div>
@@ -34,7 +38,7 @@ export default function Projects() {
           is to guess if the user is more likely an introvert, extrovert, or ambivert. It uses JavaScript
           validation for all of the information submitted.
         </p>
-        <img src="/src/assets/personalitysurvey.png" alt="Personality Survey Screenshot" width="300" />
+        <img src={persurvey} alt="Personality Survey Screenshot" width="300" />
       </div>
     </section>
   );
