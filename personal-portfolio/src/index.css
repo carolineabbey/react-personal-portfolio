@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #ffffff;
+  color: #1c1c1c;
+  line-height: 1.6;
+}
+
+nav {
+  background-color: #1c1c1c;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav a {
+  color: #90D5FF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #1c1c1c;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  color: #1c1c1c;
+  margin-bottom: 1rem;
+}
+
+img {
+  margin-top: 1rem;
+  max-width: 100%;
+  height: auto;
+  border: 4px solid #90D5FF;
+  border-radius: 4px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+input, textarea {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 2px solid #90D5FF;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+button {
+  background-color: #90D5FF;
+  color: #000000;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #74bff2;
+}
+
+p[style*="color: red"] {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 1.75rem;
+  }
+
+  .about-inline {
+    padding: 2rem 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 1.4rem;
+  }
+
+  .scroll-button {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  form {
+    gap: 0.75rem;
+  }
+}
